@@ -54,7 +54,7 @@ end
 % Perform optimization for each row in X
 while ii <= size(X, 1)
     % Perform optimization using fmincon
-    [U, fval] = fmincon(@(x) myfun(x, n, X, ii, jj), x0, A, B, Aeq, beq, lb, ub, [], options);
+    [U, fval] = fmincon(@(x) kin_var_sim(x, n, X, ii, jj), x0, A, B, Aeq, beq, lb, ub, [], options);
     rqw(ii, :) = [U, fval];
     ii = ii + 1;
 end
