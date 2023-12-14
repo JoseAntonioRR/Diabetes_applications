@@ -32,7 +32,7 @@ for count_p=1:size(tem_rqw,2)
 end
 rqw=tem_rqw;
 
-%patients that will be used
+%Patients that will be plotted
 ploted_patients=[3;4;5;6;12;13;16;20;28;33;37;40;45;54;56;60;Inf];
 
 overallM1=0;
